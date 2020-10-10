@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <title>Recuperar  Clave</title>
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+   <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <h3>RECUPERAR CLAVE DE ACCESO</h3>
+  
+  <form id="buscarCorreo">
+     <h5>Ingrese correo registrado para recuperar contraseña</h5>
+     <br>
+     <input type="email" name="correo" id ="" placeholder="Ingrese su direccion de correo" required autocomplete="off">
+     <input type="submit" value="ENVIAR">
+     <input type = "button" value = "VOLVER MENU" OnClick = "location = 'login.php'">
+  </form>
+  <footer>e1maxSystemas 2016</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src = "js/config.js"></script>
+<script>
+      $('#buscarCorreo').submit(e=>{
+         e.preventDefault()
+         console.log('INGRESE A PETICION AJAX!')  
+         $.post("olvidoclave1.php", {correo: $('input[type="email"]').val()}, (data)=>{
+            if(data == "OK")
+               $('<div id="alert_ok">Tus datos han sido enviados al correo!</div>').insertAfter($('h3'))       
+            else
+               $('<div id="alert_error">El correo no esta regristrado!</div>').insertAfter($('h3'))
+            alert_ocultardiv()
+            
+         })
+         $('input[type="email"]').val("")
+      })
+</script>
+
+</body>
+</html>

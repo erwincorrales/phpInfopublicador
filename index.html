@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/inicio.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>infopub - App Informes de Publicador</title>
+</head>
+<body>
+  <div class="contenedor">
+      <header>
+        <a href="index.html"><img class=menu-logo src="images/infopub-blanco1.png" alt="infopub"></a>
+        <nav>
+          <a href="login.php">Ingresar</a>
+        </nav>
+      </header>
+      <div class="banner">
+        <div class="titulo">
+          <h1>Programa Informes de Publicador</h1>
+          <p>Permite centralizar la recolección de los informes de Actividades al Servicio en tiempo real y permite herramientas estadisticas -promedios, informes y totales para plataforma JW- y alertas a publicadores mensuales.</p>
+          <a href="login.php">INGRESAR</a>
+        </div>
+        <form id="formulario">
+          <p>Ingrese Datos para Registrarse:</p>
+          <input type="text" name="nombre" placeholder="Nombre">
+          <input type="text" name="apellido" placeholder="Apellido">
+          <input type="email" name="correo" placeholder="Correo Electronico">
+          <input type="text" name="congregacion" placeholder="Nombre Congregación">
+          <input type="text" name="ciudad" placeholder="Ciudad">
+          <input type="text" name="pais" placeholder="País">
+          <p>Cómo usará el programa?</p>
+          <div style="display:flex; display: -webkit-flex;">
+            <label><input type="radio" name="perfil" value="secretario" checked>Secretario Cong.</label>
+            <label><input type="radio" name="perfil" value="usuario">Personal</label>
+          </div>
+
+          <input type="submit" value="REGÍSTRESE">
+        </form>
+      </div>
+         <div class="funciones">
+            <h2>Funciones</h2>
+            <div class="func-item">
+              <img src="images/consolidadojw-infopub.jpg" alt="">
+              <div>
+                <p>Resume todos los datos necesarios para enviar a plataforma</p>
+              </div>
+              <h2>Consolidado JW</h2>
+            </div>
+            <div class="func-item">
+              <img src="images/web-infopub.png" alt="">
+              <div>
+                <p>Guarda tus informes en servidor y evitas extraviarlos.</p>
+                <p>Monitorea en tiempo real quienes faltan por informar trabajando en equipo.</p>
+              </div>
+              <h2>Guardado en la Web</h2>
+            </div>
+            <div class="func-item">
+              <img src="images/cuentas-usuario-e1max.co.jpg" alt="">
+              <div>
+                <p>Puedes Crear Grupos y Usuarios para recolectar los informes por grupos.</p>
+              </div>
+              <h2>Grupos-Usuarios</h2>
+            </div>
+            <div class="func-item">
+              <img src="images/estadisticas-infopub.png" alt="">
+              <div>
+                <p>Resume todos los datos necesarios para enviar a plataforma.</p>
+                <p>Consulta actividad últimos seis meses y promedios en línea.</p>
+              </div>
+              <h2>Estadísticas</h2>
+            </div>
+            <div class="func-item">
+              <img src="images/excel-infopub.png" alt="">
+              <div>
+                <p>Exporta a Hojas de Calculo xlsx para otros manejos.</p>
+                <p>Tambien puede enviarse por correo a Secretario en caso de usarse en modo personal</p>
+              </div>
+              <h2>Exportar a Excel o Email</h2>
+            </div>
+        </div>
+    <div class="testimonios">
+      <h2>Testimonios</h2>
+      <br>
+      <p>"Puedo consultar en cualquier momento con acceso a internet, me facilita el trabajo!"</p>
+    </div>
+    <footer>
+      Hecho por  <a href="http://e1max.co">e1max.co</a>
+    </footer>
+
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/alert.js"></script>
+</body>
+</html>
