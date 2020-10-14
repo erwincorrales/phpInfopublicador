@@ -60,7 +60,7 @@ $prom_estudios = round($tot_estudios/$i, 1);
 				  	<td>'.$date.'</td>
 				  	<td>'.$rq['pub'].'</td>
 					<td>'.$rq['video'].'</td>
-					<td>'.round($rq['horas'],1).'</td>
+					<td>'.round($rq['horas'],2).'</td>
 					<td>'.$rq['revisita'].'</td>
 					<td>'.$rq['estudio'].'</td>
 					</tr>';	
